@@ -16,7 +16,7 @@
   color: var(--inactive-txt-cl);
   border-radius: 8px;
 
-  transition: all var(--fast) ease;
+  transition: all var(--fast) var(--transition-timing);
 
   &:hover,
   &:focus {
