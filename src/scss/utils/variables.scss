@@ -6,6 +6,7 @@
   --secondary-txt-cl: #B5B7C0;
   --inactive-txt-cl: #9197B3;
   --white-txt-cl: #ffffff;
+  --black-txt-cl: #000000;
 
   /* FONTS */
   --main-font: 'Poppins', sans-serif;
@@ -13,4 +14,6 @@
   /* ANIMATIONS SPEED */
   --fast: 0.2s;
   --slow: 0.4s;
+
+  --transition-timing: ease;
 }
