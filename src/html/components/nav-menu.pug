@@ -1,0 +1,12 @@
+- const dashboardItems = ['dashboard', 'product', 'customers', 'income', 'promote', 'help']
+
+nav(class='nav')
+  ul(class='nav-list')
+    each item in dashboardItems
+      li(class='nav-item')
+        a(href=`/${item}` class='nav-link')
+          svg(width='24', height='24', aria-label=`${item} icon`)
+            use(xlink:href=`@img/icons/icons.svg#${item}`)
+          = item
+          svg(width='16', height='16', aria-label='arrow icon')
+            use(xlink:href='@img/icons/icons.svg#arrow')

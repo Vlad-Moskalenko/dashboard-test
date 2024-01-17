@@ -1,9 +1,27 @@
 @import "fonts";
+@import "./utils/variables";
+
+@import "./layouts/sidebar";
+@import "./components/nav-menu";
+@import "./components/logo";
 
 body {
-  font-family: Poppins, sans-serif;
+  margin: 0;
+  font-family: var(--main-font);
   font-size: 14px;
+  font-weight: 500;
   line-height: normal;
 
-  color: #292D32;
+  color: var(--primary-txt-cl);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

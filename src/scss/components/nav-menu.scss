@@ -1,0 +1,35 @@
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-link {
+  padding: 11px 8px 11px 11px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  letter-spacing: -0.14px;
+  text-transform: capitalize;
+  color: var(--inactive-txt-cl);
+  border-radius: 8px;
+
+  transition: all var(--fast) ease;
+
+  &:hover,
+  &:focus {
+    background: var(--accent-cl);
+    color: var(--white-txt-cl);
+  }
+
+  & svg:last-child {
+    margin-left: auto;
+  }
+
+  & svg:hover,
+  & svg:focus {
+    color: var(--white-txt-cl);
+  }
+}
