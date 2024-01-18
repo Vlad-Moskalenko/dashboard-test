@@ -1,73 +1,3 @@
--
-  const customers = [
-    {
-      'customer name': 'Jane Cooper',
-      company: 'Microsoft',
-      'phone number': '(225) 555-0118',
-      email: 'jane@microsoft.com',
-      country: 'United States',
-      status: 'Active',
-    },
-    {
-      'customer name': 'Floyd Miles',
-      company: 'Yahoo',
-      'phone number': '(205) 555-0100',
-      email: 'floyd@yahoo.com',
-      country: 'Kiribati',
-      status: 'Inactive',
-    },
-    {
-      'customer name': 'Ronald Richards',
-      company: 'Adobe',
-      'phone number': '(302) 555-0107',
-      email: 'ronald@adobe.com',
-      country: 'Israel',
-      status: 'Inactive',
-    },
-    {
-      'customer name': 'Marvin McKinney',
-      company: 'Tesla',
-      'phone number': '(252) 555-0126',
-      email: 'marvin@tesla.com',
-      country: 'Iran',
-      status: 'Active',
-    },
-    {
-      'customer name': 'Jerome Bell',
-      company: 'Google',
-      'phone number': '(629) 555-0129',
-      email: 'jerome@google.com',
-      country: 'Réunion',
-      status: 'Active',
-    },
-    {
-      'customer name': 'Kathryn Murphy',
-      company: 'Microsoft',
-      'phone number': '(406) 555-0120',
-      email: 'kathryn@microsoft.com',
-      country: 'Curaçao',
-      status: 'Active',
-    },
-    {
-      'customer name': 'Jacob Jones',
-      company: 'Yahoo',
-      'phone number': '(208) 555-0112',
-      email: 'jacob@yahoo.com',
-      country: 'Brazil',
-      status: 'Active',
-    },
-    {
-      'customer name': 'Kristin Watson',
-      company: 'Facebook',
-      'phone number': '(704) 555-0127',
-      email: 'kristin@facebook.com',
-      country: 'Åland Islands',
-      status: 'Inactive',
-    },
-  ];
-
-- const theadArr = Object.keys(customers[0])
-
 table(class='customers-table customers-table_mt-86')
   caption(class='customers-table__caption')
     div
@@ -91,7 +21,7 @@ table(class='customers-table customers-table_mt-86')
               td(class='customers-table__td')= item
   tfoot
     tr(class='customers-table__tfoot__tr')
-      td(colspan='3', class='customers-table__tfoot__td') Showing data 1 to 8 of  256K entries
-      td(colspan='3', class='customers-table__tfoot__td')
+      td(colspan='3', class='table-data') Showing data 1 to 8 of  256K entries
+      td(colspan='3', class='table-data')
         include pagination
 

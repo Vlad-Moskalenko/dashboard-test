@@ -3,6 +3,11 @@
   justify-content: flex-end;
   align-items: center;
   gap: 12px;
+
+  @include mq(notDesktop) {
+    padding: 10px;
+    justify-content: center;
+  }
 }
 
 .pagination__item:not(:nth-child(6)) .pagination__button {

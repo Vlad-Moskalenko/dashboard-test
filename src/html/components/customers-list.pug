@@ -1,13 +1,17 @@
-ul(class='customers-list')
-  each customer in customers
-    li(class='customer-card ')
-      ul(class='customer-description')
-        each item, key in customer
-          li(class='customer-description__item')= key
-              case item
-                when 'Active'
-                  span(class='active')= item
-                when 'Inactive'
-                  span(class='inactive')= item
-                default
-                  span= item
+div(class='customers-mobile')
+  include search-form
+  ul(class='customers-list')
+    each customer in customers
+      li(class='customer-card ')
+        ul(class='customer-description')
+          each item, key in customer
+            li(class='customer-description__item')= key
+                case item
+                  when 'Active'
+                    span(class='active')= item
+                  when 'Inactive'
+                    span(class='inactive')= item
+                  default
+                    span= item
+  p(class='table-data mobile') Showing data 1 to 8 of  256K entries
+  include pagination

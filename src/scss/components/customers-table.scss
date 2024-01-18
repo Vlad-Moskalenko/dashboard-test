@@ -131,7 +131,12 @@
   border: var(--inactive-border);
 }
 
-.customers-table__tfoot__td {
+.table-data {
   padding-top: 30px;
   color: var(--secondary-txt-cl);
+
+  @include mq(notDesktop) {
+    padding: 10px;
+    text-align: center;
+  }
 }

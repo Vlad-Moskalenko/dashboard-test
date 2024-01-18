@@ -1,11 +1,13 @@
+.customers-mobile {
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
 .customers-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  @include mq(desktop) {
-    display: none;
-  }
 }
 
 .customer-card {
