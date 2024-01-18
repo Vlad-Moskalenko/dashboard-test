@@ -4,7 +4,7 @@ nav(class='nav')
   ul(class='nav-list')
     each item in dashboardItems
       li(class='nav-item')
-        a(href=`/${item}` class='nav-link')
+        a(href=`#${item}` class='nav-link' id=`${item}`)
           svg(width='24', height='24', aria-label=`${item} icon`)
             use(xlink:href=`@img/icons/icons.svg#${item}`)
           = item

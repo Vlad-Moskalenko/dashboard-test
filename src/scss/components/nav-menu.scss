@@ -19,7 +19,8 @@
   transition: all var(--fast) var(--transition-timing);
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:target {
     background: var(--accent-cl);
     color: var(--white-txt-cl);
   }
