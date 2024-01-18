@@ -1,11 +1,9 @@
-main
-  div
-    h3 All Customers
-    p Active Member
+main(class='customers')
+  div(class='customers__header')
+    div
+      h3(class='customers__title') All Customers
+      p(class='customers__subtitle customers__subtitle_mt-7') Active Member
 
-  form
-    input(type="text" placeholder="Search")
-    button(type="submit")
-      svg(width='24', height='24', aria-label='search icon')
-        use(xlink:href='@img/icons/icons.svg#search')
+    include ../components/search-form
+  table
 

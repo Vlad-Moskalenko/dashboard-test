@@ -3,10 +3,12 @@
 
 @import "./layouts/sidebar";
 @import "./layouts/header";
+@import "./pages/customers";
 
 @import "./components/nav-menu";
 @import "./components/logo";
 @import "./components/user";
+
 
 body {
   margin: 0;
@@ -52,5 +54,5 @@ button {
 .wrapper {
   padding: 41px 95px 41px 71px;
   flex-grow: 1;
-  background-color: var(--page-bg);
+  background-color: var(--secondary-bg);
 }
