@@ -1,0 +1,6 @@
+- const pages = ['<', 1, 2, 3, 4, '...', 40, '>']
+
+ul(class='pagination__list')
+  each item in pages
+    li(class='pagination__item')
+      button(class='pagination__button')= item

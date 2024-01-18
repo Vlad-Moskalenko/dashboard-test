@@ -10,7 +10,17 @@
 @import "./components/user";
 @import "./components/search-form";
 @import "./components/customers-table";
+@import "./components/pagination";
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 body {
   margin: 0;
@@ -51,6 +61,8 @@ p,
 button {
   margin: 0;
   padding: 0;
+  font-family: inherit;
+  font-size: inherit;
   font-weight: inherit;
 }
 
