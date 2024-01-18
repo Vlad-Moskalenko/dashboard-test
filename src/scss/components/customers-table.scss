@@ -1,6 +1,6 @@
 .customers-table {
-  display: table;
   width: 100%;
+  display: table;
   border-collapse: collapse;
 }
 
@@ -41,6 +41,10 @@
   color: var(--secondary-txt-cl);
   text-align: left;
   text-transform: capitalize;
+}
+
+.customers-table__body {
+  overflow: auto;
 }
 
 .customers-table__th {

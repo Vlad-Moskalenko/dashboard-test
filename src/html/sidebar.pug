@@ -1,4 +1,8 @@
-aside(class='sidebar')
+aside(class='sidebar', data-mobile-menu)
   include components/logo
   include components/nav-menu
   include components/user
+
+  button(class='sidebar__btn', type='button', data-burger-menu)
+      svg(width='24', height='24', aria-label='arrow icon')
+        use(xlink:href='@img/icons/icons.svg#arrow')

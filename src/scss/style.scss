@@ -1,5 +1,6 @@
 @import "fonts";
 @import "./utils/variables";
+@import "./utils/mixin.scss";
 
 @import "./layouts/sidebar";
 @import "./layouts/header";
@@ -71,7 +72,9 @@ button {
 
 .wrapper {
   padding: 41px 95px 41px 71px;
+
   flex-grow: 1;
+
   background-color: var(--secondary-bg);
 }
 
