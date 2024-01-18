@@ -5,7 +5,7 @@
   gap: 12px;
 }
 
-.pagination__button {
+.pagination__item:not(:nth-child(6)) .pagination__button {
   width: 26px;
   height: 24px;
 
@@ -26,9 +26,16 @@
     color: var(--white-txt-cl);
     background-color: var(--accent-cl);
     cursor: pointer;
+    border-color: transparent;
   }
 
   &:active {
     transform: scale(1.1);
   }
+}
+
+.pagination__item:nth-child(6) .pagination__button {
+  width: 10px;
+  border: none;
+  background-color: transparent;
 }
