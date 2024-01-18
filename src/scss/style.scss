@@ -8,6 +8,7 @@
 @import "./components/nav-menu";
 @import "./components/logo";
 @import "./components/user";
+@import "./components/search-form";
 
 
 body {
@@ -16,7 +17,7 @@ body {
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.5;
 
   color: var(--primary-txt-cl);
 }
@@ -55,4 +56,14 @@ button {
   padding: 41px 95px 41px 71px;
   flex-grow: 1;
   background-color: var(--secondary-bg);
+}
+
+input {
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+form {
+  margin: 0;
 }
