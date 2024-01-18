@@ -4,6 +4,10 @@
 
 .search-form_mr-9 {
   margin-right: 9px;
+
+  @include mq(notDesktop) {
+    margin-right: 0;
+  }
 }
 
 .search-form__input {
@@ -21,6 +25,11 @@
 
   &::placeholder {
     color: var(--secondary-txt-cl);
+  }
+
+  @include mq(notDesktop) {
+    margin-bottom: 20px;
+    background-color: var(--primary-bg);
   }
 }
 
