@@ -40,3 +40,14 @@
     text-transform: none;
   }
 }
+
+.title {
+  text-align: center;
+  @extend .customers-table__title;
+}
+
+.subtitle {
+  margin-bottom: 10px;
+  text-align: center;
+  @extend .customers-table__subtitle;
+}

@@ -4,4 +4,8 @@
 
 .greeting_mb-51 {
   margin-bottom: 51px;
+
+  @include mq(notDesktop) {
+    margin-bottom: 20px;
+  }
 }
