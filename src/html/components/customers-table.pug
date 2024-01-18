@@ -1,0 +1,94 @@
+-
+  const customers = [
+    {
+      'customer name': 'Jane Cooper',
+      company: 'Microsoft',
+      'phone number': '(225) 555-0118',
+      email: 'jane@microsoft.com',
+      country: 'United States',
+      status: 'Active',
+    },
+    {
+      'customer name': 'John Doe',
+      company: 'Apple',
+      'phone number': '(555) 555-1212',
+      email: 'john@apple.com',
+      country: 'United States',
+      status: 'Active',
+    },
+    {
+      'customer name': 'Lucy Lee',
+      company: 'Google',
+      'phone number': '(555) 555-2323',
+      email: 'lucy@google.com',
+      country: 'United States',
+      status: 'Inactive',
+    },
+    {
+      'customer name': 'Pedro Rodriguez',
+      company: 'Amazon',
+      'phone number': '(555) 555-3434',
+      email: 'pedro@amazon.com',
+      country: 'Mexico',
+      status: 'Active',
+    },
+    {
+      'customer name': 'Sara Ali',
+      company: 'Facebook',
+      'phone number': '(555) 555-4545',
+      email: 'sara@facebook.com',
+      country: 'Pakistan',
+      status: 'Active',
+    },
+    {
+      'customer name': 'Hiroshi Yamamoto',
+      company: 'Sony',
+      'phone number': '(555) 555-5656',
+      email: 'hiroshi@sony.com',
+      country: 'Japan',
+      status: 'Active',
+    },
+    {
+      'customer name': 'Maria Hernandez',
+      company: 'Tesla',
+      'phone number': '(555) 555-6767',
+      email: 'maria@tesla.com',
+      country: 'Spain',
+      status: 'Inactive',
+    },
+    {
+      'customer name': 'Ivan Truchenko',
+      company: 'Samsung',
+      'phone number': '(555) 555-7878',
+      email: 'ivan@samsung.com',
+      country: 'Ukraine',
+      status: 'Active',
+    },
+  ];
+
+- const theadArr = Object.keys(customers[0])
+
+table(class='customers-table customers-table_mt-101')
+  caption(class='customers-table__caption')
+    div
+      h3(class='customers-table__title') All Customers
+      p(class='customers-table__subtitle customers-table__subtitle_mt-7') Active Members
+    include search-form
+  thead(class='customers-table__header')
+    tr
+      each title in theadArr
+        th(class='customers-table__th')= title
+  tbody(class='customers-table__body')
+    each customer in customers
+      tr(class='customers-table__tr')
+        each item in customer
+          case item
+            when 'Active'
+              td(class='customers-table__td customers-table__td_active')= item
+            when 'Inactive'
+              td(class='customers-table__td customers-table__td_inactive')= item
+            default
+              td(class='customers-table__td')= item
+  tfoot
+    tr(class='customers-table__tfoot__tr')
+      td(colspan='3', class='customers-table__tfoot__td') Showing data 1 to 8 of  256K entries

@@ -1,28 +1,10 @@
 .customers {
   padding: 30px 40px 40px;
+  position: relative;
 
   background-color: var(--primary-bg);
   border-radius: 30px;
   box-shadow: rgba(226, 236, 249, 0.5) 0px 10px 60px;
-}
 
-.customers__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.customers__title {
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: -0.22px;
-}
-
-.customers__subtitle {
-  letter-spacing: -0.14px;
-  color: var(--active-txt-cl);
-}
-
-.customers__subtitle_mt-7 {
-  margin-top: 7px;
+  overflow: hidden;
 }

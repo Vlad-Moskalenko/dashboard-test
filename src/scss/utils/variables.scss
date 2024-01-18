@@ -4,15 +4,23 @@
   /* TEXT COLORS */
   --primary-txt-cl: #292D32;
   --secondary-txt-cl: #B5B7C0;
-  --inactive-txt-cl: #9197B3;
+  --disabled-txt-cl: #9197B3;
   --white-txt-cl: #ffffff;
   --black-txt-cl: #000000;
-  --active-txt-cl: #16C098;
+  --active-txt-cl: #008767;
+  --inactive-txt-cl: #DF0404;
 
   /* BACKGROUND COLORS */
   --primary-bg: #ffffff;
   --secondary-bg: #FAFBFF;
   --input-bg: #F9FBFF;
+  --tr-bg: #EEEEEE;
+  --active-bg:rgba(22, 192, 152, 0.38);
+  --inactive-bg: #FFC5C5;
+
+  /*BORDER*/
+  --active-border: 1px solid #00B087;
+  --inactive-border: 1px solid #DF0404;
 
   /* FONTS */
   --main-font: 'Poppins', sans-serif;
