@@ -84,9 +84,9 @@ table(class='customers-table customers-table_mt-86')
         each item in customer
           case item
             when 'Active'
-              td(class='customers-table__td customers-table__td_active')= item
+              td(class='customers-table__td active')= item
             when 'Inactive'
-              td(class='customers-table__td customers-table__td_inactive')= item
+              td(class='customers-table__td inactive')= item
             default
               td(class='customers-table__td')= item
   tfoot

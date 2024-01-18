@@ -2,6 +2,10 @@
   width: 100%;
   display: table;
   border-collapse: collapse;
+
+  @include mq(notDesktop) {
+    display: none;
+  }
 }
 
 .customers-table__caption {
@@ -102,7 +106,7 @@
   }
 }
 
-.customers-table__td_active {
+.active {
   margin-top: 20px;
   padding: 3px 12px;
 
@@ -114,10 +118,14 @@
   background-color: var(--active-bg);
   border: var(--active-border);
   border-radius: 4px;
+
+  @include mq(notDesktop) {
+    margin-top: 0;
+  }
 }
 
-.customers-table__td_inactive {
-  @extend .customers-table__td_active;
+.inactive {
+  @extend .active;
   color: var(--inactive-txt-cl);
   background-color: var(--inactive-bg);
   border: var(--inactive-border);

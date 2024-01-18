@@ -12,6 +12,7 @@
 @import "./components/search-form";
 @import "./components/customers-table";
 @import "./components/pagination";
+@import "./components/customers-list";
 
 html {
   box-sizing: border-box;
@@ -25,10 +26,6 @@ html {
 
 body {
   margin: 0;
-  height: 100vh;
-
-  display: flex;
-
   font-family: var(--main-font);
   font-size: 14px;
   font-weight: 500;
@@ -70,12 +67,20 @@ button {
   font-weight: inherit;
 }
 
-.wrapper {
+.root-wrapper {
+  display: flex;
+}
+
+.page-wrapper {
   padding: 41px 95px 41px 71px;
 
   flex-grow: 1;
 
   background-color: var(--secondary-bg);
+
+  @include mq(notDesktop) {
+    padding: 20px 20px 20px 50px;
+  }
 }
 
 input {

@@ -2,8 +2,9 @@ html
 	include html/head
 
 	body
-		include html/sidebar
-		div(class='wrapper')
-			include html/header
-			include html/pages/customers-page
-		script(src='js/app.min.js')
+		div(class='root-wrapper')
+			include html/sidebar
+			div(class='page-wrapper')
+				include html/header
+				include html/pages/customers-page
+			script(src='js/app.min.js')

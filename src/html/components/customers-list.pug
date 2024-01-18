@@ -1,0 +1,13 @@
+ul(class='customers-list')
+  each customer in customers
+    li(class='customer-card ')
+      ul(class='customer-description')
+        each item, key in customer
+          li(class='customer-description__item')= key
+              case item
+                when 'Active'
+                  span(class='active')= item
+                when 'Inactive'
+                  span(class='inactive')= item
+                default
+                  span= item

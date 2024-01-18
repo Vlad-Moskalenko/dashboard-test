@@ -1,10 +1,17 @@
 .customers {
-  padding: 30px 40px 40px;
-  position: relative;
+  @include mq(desktop) {
+    padding: 30px 40px 40px;
+    position: relative;
 
-  background-color: var(--primary-bg);
-  border-radius: 30px;
-  box-shadow: rgba(226, 236, 249, 0.5) 0px 10px 60px;
+    background-color: var(--primary-bg);
+    border-radius: 30px;
+    box-shadow: var(--box-shadow);
 
-  overflow: hidden;
+    overflow: hidden;
+  }
+
+  @include mq(notDesktop) {
+    padding: 0;
+    background-color: transparent;
+  }
 }

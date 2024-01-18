@@ -1,0 +1,40 @@
+.customers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mq(desktop) {
+    display: none;
+  }
+}
+
+.customer-card {
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 300px;
+  max-width: 600px;
+
+  border-radius: 20px;
+  background-color: var(--primary-bg);
+  box-shadow: var(--box-shadow);
+}
+
+.customer-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.customer-description__item {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--tr-bg);
+  text-transform: capitalize;
+
+  & > span {
+    text-transform: none;
+  }
+}

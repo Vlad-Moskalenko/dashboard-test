@@ -22,27 +22,31 @@
 }
 
 .sidebar__btn {
-  display: inline-block;
-  width: 32px;
+  display: none;
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -30px;
+  @include mq(notDesktop) {
+    display: inline-block;
+    width: 32px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -30px;
 
-  color: var(--disabled-txt-cl);
-  background: var(--accent-cl);
-  border: none;
-  transition: all var(--fast) var(--transition-timing);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  &:hover,
-  &:focus {
-    color: var(--white-txt-cl);
-    cursor: pointer;
+    color: var(--disabled-txt-cl);
+    background: var(--accent-cl);
+    border: none;
+    transition: all var(--fast) var(--transition-timing);
+
+    &:hover,
+    &:focus {
+      color: var(--white-txt-cl);
+      cursor: pointer;
+    }
   }
 }
 
