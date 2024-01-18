@@ -2,6 +2,8 @@
 @import "./utils/variables";
 
 @import "./layouts/sidebar";
+@import "./layouts/header";
+
 @import "./components/nav-menu";
 @import "./components/logo";
 @import "./components/user";
@@ -44,4 +46,11 @@ p,
 button {
   margin: 0;
   padding: 0;
+  font-weight: inherit;
+}
+
+.wrapper {
+  padding: 41px 95px 41px 71px;
+  flex-grow: 1;
+  background-color: var(--page-bg);
 }

@@ -3,5 +3,7 @@ html
 
 	body
 		include html/sidebar
-		include html/pages/customers-page
+		div(class='wrapper')
+			include html/header
+			include html/pages/customers-page
 		script(src='js/app.min.js')
