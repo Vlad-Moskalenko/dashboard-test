@@ -1,6 +1,9 @@
-@import "fonts";
 @import "./utils/variables";
-@import "./utils/mixin.scss";
+@import "./utils/mixin";
+
+@import "./base/fonts";
+@import "./base/common";
+@import "./base/container";
 
 @import "./layouts/sidebar";
 @import "./layouts/header";
@@ -13,91 +16,3 @@
 @import "./components/customers-table";
 @import "./components/pagination";
 @import "./components/customers-list";
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  font-family: var(--main-font);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: -0.14px;
-
-  color: var(--primary-txt-cl);
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button {
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.root-wrapper {
-  display: flex;
-}
-
-.page-wrapper {
-  padding: 41px 95px 41px 71px;
-
-  flex-grow: 1;
-
-  background-color: var(--secondary-bg);
-
-  @include mq(notDesktop) {
-    padding: 20px 20px 20px 50px;
-  }
-}
-
-input {
-  font-size: inherit;
-  color: inherit;
-  line-height: inherit;
-}
-
-form {
-  margin: 0;
-}
-
-table,
-thead,
-tbody,
-tfoot {
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
-}
