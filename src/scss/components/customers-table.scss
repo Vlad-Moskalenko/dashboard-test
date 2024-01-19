@@ -107,20 +107,21 @@
 }
 
 .active {
-  margin-top: 2rem;
+  margin: 2rem auto;
   padding: 0.3rem 1.2rem;
 
-  display: inline-flex;
-  min-width: 8rem;
-  justify-content: center;
+  display: block;
+  width: 8rem;
+  height: 2.9rem;
 
+  text-align: center;
   color: var(--active-txt-cl);
   background-color: var(--active-bg);
   border: var(--active-border);
   border-radius: 0.4rem;
 
   @include mq(notDesktop) {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
