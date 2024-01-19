@@ -41,10 +41,23 @@
 }
 
 .customers-table__header {
+  position: relative;
   letter-spacing: -0.014rem;
   color: var(--secondary-txt-cl);
   text-align: left;
   text-transform: capitalize;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -4rem;
+    right: -4rem;
+
+    height: 0.1rem;
+
+    background-color: var(--tr-bg);
+  }
 }
 
 .customers-table__body {
@@ -52,21 +65,8 @@
 }
 
 .customers-table__th {
-  position: relative;
   padding: 1.4rem 0;
   font-weight: 500;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: -4rem;
-
-    width: 96.8rem;
-    height: 0.1rem;
-
-    background-color: var(--tr-bg);
-  }
 
   &:first-child {
     width: 19.4%;
