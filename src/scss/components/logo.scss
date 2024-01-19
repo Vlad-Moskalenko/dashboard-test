@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  gap: 8px;
+  gap: 0.8rem;
   align-items: center;
 
   color: var(--black-txt-cl);
@@ -18,16 +18,16 @@
 }
 
 .logo__text {
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 600;
-  letter-spacing: 0.26px;
+  letter-spacing: 0.026rem;
 }
 
 .logo__version {
-  margin-left: 4px;
+  margin-left: 0.4rem;
 
-  font-size: 10px;
-  letter-spacing: -0.1px;
+  font-size: 1rem;
+  letter-spacing: -0.01rem;
 
   color: #838383;
   transition: color var(--fast) var(--transition-timing);

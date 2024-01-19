@@ -3,7 +3,7 @@
 }
 
 .search-form_mr-9 {
-  margin-right: 9px;
+  margin-right: 0.9rem;
 
   @include mq(notDesktop) {
     margin-right: 0;
@@ -12,13 +12,13 @@
 
 .search-form__input {
   width: 100%;
-  min-width: 216px;
-  padding: 10px 10px 10px 40px;
+  min-width: 21.6rem;
+  padding: 1.0rem 1.0rem 1.0rem 4.0rem;
 
-  font-size: 12px;
-  letter-spacing: -0.12px;
+  font-size: 1.2rem;
+  letter-spacing: -0.012rem;
 
-  border-radius: 10px;
+  border-radius: 1.0rem;
   background: var(--input-bg);
   border: none;
   outline: transparent;
@@ -28,13 +28,13 @@
   }
 
   @include mq(notDesktop) {
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
     background-color: var(--primary-bg);
   }
 }
 
 .search-form__button {
-  padding: 7px 8px;
+  padding: 0.7rem 0.8rem;
 
   position: absolute;
   top: 0;

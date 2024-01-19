@@ -1,20 +1,20 @@
 .nav-list {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 1.9rem;
 }
 
 .nav-link {
-  padding: 11px 8px 11px 11px;
+  padding: 1.1rem 0.8rem 1.1rem 1.1rem;
 
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 1.4rem;
 
-  letter-spacing: -0.14px;
+  letter-spacing: -0.014rem;
   text-transform: capitalize;
   color: var(--disabled-txt-cl);
-  border-radius: 8px;
+  border-radius: 0.8rem;
 
   transition: all var(--fast) var(--transition-timing);
 

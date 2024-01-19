@@ -1,11 +1,11 @@
 .greeting {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .greeting_mb-51 {
-  margin-bottom: 51px;
+  margin-bottom: 5.1rem;
 
   @include mq(notDesktop) {
-    margin-bottom: 20px;
+    margin-bottom: 2.0rem;
   }
 }

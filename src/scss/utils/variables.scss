@@ -20,8 +20,8 @@
   --inactive-bg: #FFC5C5;
 
   /*BORDER*/
-  --active-border: 1px solid #00B087;
-  --inactive-border: 1px solid #DF0404;
+  --active-border: 0.1rem solid #00B087;
+  --inactive-border: 0.1rem solid #DF0404;
 
   /* FONTS */
   --main-font: 'Poppins', sans-serif;
@@ -32,5 +32,5 @@
 
   --transition-timing: ease;
 
-  --box-shadow: rgba(226, 236, 249, 0.5) 0px 10px 60px;
+  --box-shadow: rgba(226, 236, 249, 0.5) 0rem 1.0rem 6.0rem;
 }

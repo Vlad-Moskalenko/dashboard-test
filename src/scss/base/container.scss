@@ -1,11 +1,11 @@
 .container {
-  padding: 41px 95px 41px 71px;
+  padding: 4.1rem 9.5rem 4.1rem 7.1rem;
 
   flex-grow: 1;
 
   background-color: var(--secondary-bg);
 
   @include mq(notDesktop) {
-    padding: 20px 20px 20px 50px;
+    padding: 2rem 2rem 2rem 5rem;
   }
 }
