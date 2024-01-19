@@ -54,7 +54,10 @@ button {
 
 .root {
   display: flex;
+  min-width: 380px;
   min-height: 100vh;
+
+  background-color: var(--secondary-bg);
 }
 
 input {

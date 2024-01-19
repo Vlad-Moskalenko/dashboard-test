@@ -1,11 +1,12 @@
 .container {
   padding: 4.1rem 9.5rem 4.1rem 7.1rem;
+  margin: 0 auto;
 
   flex-grow: 1;
 
-  background-color: var(--secondary-bg);
-
   @include mq(notDesktop) {
     padding: 2rem 2rem 2rem 5rem;
+    margin: 0 auto;
+    max-width: 600px;
   }
 }
