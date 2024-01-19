@@ -49,11 +49,3 @@
     }
   }
 }
-
-.menu-open {
-  transform: translateX(0);
-
-  .sidebar__btn svg {
-    transform: rotate(180deg);
-  }
-}
